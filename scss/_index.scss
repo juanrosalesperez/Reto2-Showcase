@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $bgn-color;
+  .shop {
+    display: flex;
+
+    width: 100vw;
+    height: 100vh;
+    .productos {
+      @include img;
+      background-color: $bgn-color;
+      margin: 1rem;
+      box-shadow: -6px -6px 0px 7px rgba(0, 0, 0, 0.75);
+      border: 2px solid $other-color;
+      width: 47vw;
+      height: 95vh;
+      display: flex;
+      flex-wrap: wrap;
+      .right {
+        padding-right: 5%;
+      }
+      .left {
+        padding-left: 5%;
+      }
+      &-productoTop {
+        margin-top: 24px;
+        width: 50%;
+        height: 18%;
+
+        &_dragp1,
+        &_dragp2 {
+          @include product;
+        }
+        &_preciop1,
+        &_preciop2 {
+          width: 100%;
+          height: 32%;
+          p {
+            @include price;
+          }
+        }
+      }
+      &-producto {
+        width: 50%;
+        height: 18%;
+        &_dragp3,
+        &_dragp4,
+        &_dragp5,
+        &_dragp6,
+        &_dragp7,
+        &_dragp8,
+        &_dragp9,
+        &_dragp10 {
+          @include product;
+        }
+
+        &_preciop3,
+        &_preciop4,
+        &_preciop5,
+        &_preciop6,
+        &_preciop7,
+        &_preciop8,
+        &_preciop9,
+        &_preciop10 {
+          width: 100%;
+          height: 32%;
+          p {
+            @include price;
+          }
+        }
+      }
+    }
+    .venta {
+      display: flex;
+      flex-direction: column;
+
+      .coste {
+        display: flex;
+        height: 35vh;
+        width: 50vw;
+        margin: 1rem;
+        .articulos {
+          background-color: white;
+          height: 35%;
+          width: 100%;
+        }
+        .total {
+          background-color: black;
+          height: 35%;
+          width: 100%;
+        }
+      }
+      .imagenes {
+        display: flex;
+        height: 55vh;
+        width: 50vw;
+        align-items: flex-end;
+        margin: 1rem;
+
+        .carro {
+          height: 50%;
+          width: 39%;
+          position: relative;
+
+          &_objeto {
+            position: relative;
+            display: block;
+            margin: 0 1rem;
+            height: 82%;
+            width: 100%;
+            z-index: 1100;
+            margin-top: 10%;
+          }
+
+          .dropped {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            &_element {
+              width: 15%;
+              margin: 0.2rem;
+            }
+          }
+        }
+        .girl {
+          @include img;
+          background-image: url(./../img/girl.png);
+          margin: 0 1rem;
+          height: 85%;
+          width: 22%;
+        }
+      }
+    }
+  }
+}
+/* .jar {
+  pointer-events: none;
+  position: relative;
+  height: 100%;
+  max-width: 31%;
+  width: auto;
+  border: none;
+  background: none;
+}
+
+.jar img {
+  position: relative;
+  z-index: 1100;
+  display: block;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 25%,
+    rgba(139, 165, 198, 0.5) 10%,
+    transparent 50%,
+    rgba(164, 196, 214, 0.5) 90%,
+    transparent 89%
+  );
+  background-size: 98% 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.jar:after {
+  content: "";
+  position: absolute;
+  bottom: 6%;
+  left: 1%;
+  width: 98%;
+  background: radial-gradient(80% 54% at center, #616161 48%, #8f928c 50%);
+  height: 21%;
+  z-index: -1;
+  border-radius: 44% 30% / 50% 50%;
+} */
