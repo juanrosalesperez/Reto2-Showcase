@@ -91,7 +91,7 @@ body .shop .venta .coste {
   width: 50vw;
   margin: 1rem;
 }
-body .shop .venta .coste .articulos {
+body .shop .venta .coste .shopping-cart {
   background-color: white;
   height: 35%;
   width: 100%;
@@ -109,26 +109,32 @@ body .shop .venta .imagenes {
   margin: 1rem;
 }
 body .shop .venta .imagenes .carro {
-  height: 50%;
-  width: 39%;
+  height: 65%;
+  width: 45%;
   position: relative;
+  padding: 9% 16% 0 0;
+  margin: 0 0 10% 10%;
 }
-body .shop .venta .imagenes .carro_objeto {
-  position: relative;
-  display: block;
-  margin: 0 1rem;
-  height: 82%;
+body .shop .venta .imagenes .carro_img {
+  height: 25%;
+  width: 23%;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+}
+body .shop .venta .imagenes .carro_img_objeto {
+  position: absolute;
+  height: 100%;
   width: 100%;
-  z-index: 1100;
-  margin-top: 10%;
 }
-body .shop .venta .imagenes .carro .dropped {
+body .shop .venta .imagenes .dropped {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
+  word-wrap: break-word;
 }
-body .shop .venta .imagenes .carro .dropped_element {
-  width: 15%;
+body .shop .venta .imagenes .dropped_element {
+  width: 9%;
   margin: 0.2rem;
 }
 body .shop .venta .imagenes .girl {
@@ -136,7 +142,7 @@ body .shop .venta .imagenes .girl {
   background-position: center;
   background-size: contain;
   background-image: url(./../img/girl.png);
-  margin: 0 1rem;
+  margin: 0 0 0 6rem;
   height: 85%;
   width: 22%;
 }

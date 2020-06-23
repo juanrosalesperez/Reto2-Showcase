@@ -6,7 +6,6 @@ body {
   background-color: $bgn-color;
   .shop {
     display: flex;
-
     width: 100vw;
     height: 100vh;
     .productos {
@@ -82,7 +81,7 @@ body {
         height: 35vh;
         width: 50vw;
         margin: 1rem;
-        .articulos {
+        .shopping-cart {
           background-color: white;
           height: 35%;
           width: 100%;
@@ -99,36 +98,40 @@ body {
         width: 50vw;
         align-items: flex-end;
         margin: 1rem;
-
         .carro {
-          height: 50%;
-          width: 39%;
+          height: 65%;
+          width: 45%;
           position: relative;
+          padding: 9% 16% 0 0;
+          margin: 0 0 10% 10%;
+        }
+        .carro_img {
+          height: 25%;
+          width: 23%;
+          position: absolute;
+          display: flex;
+          align-items: flex-end;
 
           &_objeto {
-            position: relative;
-            display: block;
-            margin: 0 1rem;
-            height: 82%;
+            position: absolute;
+            height: 100%;
             width: 100%;
-            z-index: 1100;
-            margin-top: 10%;
           }
-
-          .dropped {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-end;
-            &_element {
-              width: 15%;
-              margin: 0.2rem;
-            }
+        }
+        .dropped {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-end;
+          word-wrap: break-word;
+          &_element {
+            width: 9%;
+            margin: 0.2rem;
           }
         }
         .girl {
           @include img;
           background-image: url(./../img/girl.png);
-          margin: 0 1rem;
+          margin: 0 0 0 6rem;
           height: 85%;
           width: 22%;
         }
