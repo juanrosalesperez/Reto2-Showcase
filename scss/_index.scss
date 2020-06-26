@@ -32,6 +32,10 @@ body {
         &_dragp1,
         &_dragp2 {
           @include product;
+          img {
+            width: auto;
+            height: 80%;
+          }
         }
         &_preciop1,
         &_preciop2 {
@@ -54,6 +58,10 @@ body {
         &_dragp9,
         &_dragp10 {
           @include product;
+          img {
+            width: auto;
+            height: 80%;
+          }
         }
 
         &_preciop3,
@@ -94,6 +102,9 @@ body {
           }
           ul li {
             @include listado;
+            .name {
+              margin: 0 0.5rem;
+            }
           }
         }
         .total {
