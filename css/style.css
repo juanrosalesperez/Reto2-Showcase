@@ -53,12 +53,13 @@ body .shop .productos-productoTop_preciop1, body .shop .productos-productoTop_pr
   height: 32%;
 }
 body .shop .productos-productoTop_preciop1 p, body .shop .productos-productoTop_preciop2 p {
-  text-align: center;
   color: #390707;
-  padding-top: 0.5rem;
-  font-size: 2rem;
+  padding-top: 1%;
+  font-size: 170%;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
 body .shop .productos-producto {
   width: 50%;
@@ -82,12 +83,13 @@ body .shop .productos-producto_preciop3, body .shop .productos-producto_preciop4
   height: 32%;
 }
 body .shop .productos-producto_preciop3 p, body .shop .productos-producto_preciop4 p, body .shop .productos-producto_preciop5 p, body .shop .productos-producto_preciop6 p, body .shop .productos-producto_preciop7 p, body .shop .productos-producto_preciop8 p, body .shop .productos-producto_preciop9 p, body .shop .productos-producto_preciop10 p {
-  text-align: center;
   color: #390707;
-  padding-top: 0.5rem;
-  font-size: 2rem;
+  padding-top: 1%;
+  font-size: 170%;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
 body .shop .venta {
   display: flex;
@@ -113,9 +115,9 @@ body .shop .venta .coste #cart p {
 }
 body .shop .venta .coste #cart ul li {
   color: #390707;
-  margin: 1rem;
+  margin: 0.5rem;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
@@ -123,16 +125,23 @@ body .shop .venta .coste #cart ul li .name {
   margin: 0 0.5rem;
 }
 body .shop .venta .coste .total {
-  height: 35%;
+  height: 58%;
   width: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body .shop .venta .coste .total p {
-  text-align: center;
   color: #390707;
-  padding-top: 0.5rem;
-  font-size: 2rem;
+  padding-top: 1%;
+  font-size: 170%;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
 }
 body .shop .venta .coste .total span {
   color: #390707;
@@ -143,6 +152,17 @@ body .shop .venta .coste .total span {
   font-weight: 700;
   justify-content: center;
   align-items: center;
+}
+body .shop .venta .coste .total button {
+  background-color: #390707;
+  border: none;
+  color: #fcd599;
+  padding: 1rem;
+  width: 50%;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 2rem;
 }
 body .shop .venta .imagenes {
   display: flex;

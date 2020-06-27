@@ -1,13 +1,13 @@
 @mixin price {
-    color: #390707;
-    padding-top: 1%;
-    font-size: 170%;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
+  color: #390707;
+  padding-top: 1%;
+  font-size: 170%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
-}
+
 @mixin product {
   width: 100%;
   height: 74%;
@@ -34,9 +34,9 @@
 }
 @mixin listado {
   color: #390707;
-  margin: 1rem;
+  margin: 0.5rem;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }

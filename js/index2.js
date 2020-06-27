@@ -1,39 +1,3 @@
-/* function allowDrop(ev) {
-  ev.preventDefault();
-}
-
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-  if (ev.preventDefault) ev.preventDefault();
-  if (ev.stopPropagation) ev.stopPropagation();
-  else ev.cancelBubble = true;
-
-  let data = ev.dataTransfer.getData("text");
-  let element = document.getElementById(data);
-
-  ev.target.appendChild(element);
-  ev.target.classList.add("dropped");
-  element.classList.add("dropped_element");
-  element.setAttribute("draggable", "false");
-
-  var exists = document.querySelectorAll("#cart ul li[data-id='" + data + "']");
-
-  if (exists.length > 0) {
-    updateCartItem(exists[0]);
-  } else {
-    addCartItem(element, data);
-  }
-
-  updateCart();
-
-  return false;
-} */
-
-//--------------------------------------------
-
 let items = document.querySelectorAll("div.drag_item img");
 let cart = document.querySelectorAll("section#cart ul")[0];
 
@@ -67,6 +31,28 @@ function updateCartItem(item) {
 function addCartItem(item, id, price) {
   let cart = document.querySelectorAll("section#cart ul")[0];
   var clone = document.createElement("li");
+  let name = "";
+  if (id === "producto_1") {
+    name = "Mantequilla";
+  } else if (id === "producto_2") {
+    name = "Galletas";
+  } else if (id === "producto_3") {
+    name = "Mermelada";
+  } else if (id === "producto_4") {
+    name = "Espaguetis";
+  } else if (id === "producto_5") {
+    name = "Agua";
+  } else if (id === "producto_6") {
+    name = "Gaseosa";
+  } else if (id === "producto_7") {
+    name = "Batido";
+  } else if (id === "producto_8") {
+    name = "Zumo";
+  } else if (id === "producto_9") {
+    name = "Coca Cola";
+  } else if (id === "producto_10") {
+    name = "Leche";
+  }
   clone.setAttribute("data-id", id);
   clone.setAttribute("data-price", price);
   clone.setAttribute("data-quantity", 1);
@@ -74,7 +60,7 @@ function addCartItem(item, id, price) {
 
   var fragment = document.createElement("span");
   fragment.setAttribute("class", "name");
-  fragment.innerHTML = id;
+  fragment.innerHTML = name;
   clone.appendChild(fragment);
 
   fragment = document.createElement("span");
@@ -104,8 +90,6 @@ function onDrop(ev) {
 
   var exists = document.querySelectorAll('#cart ul li[data-id="' + data + '"]');
   if (exists.length > 0) {
-    console.log("la longitud");
-    console.log(exists.length);
     updateCartItem(exists[0]);
   } else {
     addCartItem(element, data, price);
@@ -125,4 +109,7 @@ function onDrag(event) {
   event.dataTransfer.dropEffect = "move";
   var target = event.target || event.srcElement;
   var success = event.dataTransfer.setData("Text", target.id);
+}
+function Borrar() {
+  location.reload();
 }

@@ -108,13 +108,30 @@ body {
           }
         }
         .total {
-          height: 35%;
+          height: 58%;
           width: 100%;
+          margin: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           p {
             @include price;
+            padding-top: 0;
           }
           span {
             @include total;
+          }
+          button {
+            background-color: $other-color;
+            border: none;
+            color: $bgn-color;
+            padding: 1rem;
+            width: 50%;
+            font-size: 2rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            border-radius: 2rem;
           }
         }
       }
